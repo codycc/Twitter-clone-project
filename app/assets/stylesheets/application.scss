@@ -68,3 +68,51 @@ body {
 
 .rounded-img {
 border-radius:5%;}
+
+.post-form-panel {
+  margin-bottom:-21px;
+
+}
+
+.panel-image img.panel-image-preview {
+  width:100%;
+  border-radius:4px 4px 0px 0px;
+
+}
+
+.panel-heading ~ .panel-image img.panel img.panel-image-preview {
+  border-radius: 0px;
+
+}
+
+.panel-image ~ .panel-body, panel-image.hide-panel-body ~ .panel-body {
+  overflow:hidden;
+}
+
+.panel-image ~ .panel-footer a {
+
+  padding:0px 10px;
+  font-size:1.3em;
+  color:rgb(100,100,100);
+}
+.panel-image.hide-panel-body ~.panel-body {
+  height:0px;
+  padding:0px;
+
+}
+
+.panel-footer {
+  background-color: white;
+}
+
+.home-avatar {
+  margin-bottom:25px;
+}
+
+.profile-banner {
+margin-top:-21px;
+
+height:300px;
+
+
+}

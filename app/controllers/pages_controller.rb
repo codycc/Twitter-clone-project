@@ -16,6 +16,8 @@ class PagesController < ApplicationController
   end
   @posts = Post.all.where("user_id = ?", User.find_by_username(params[:id]).id)
   @newPost = Post.new
+  @tofollow = User.all.limit(5)
+  @tweets = current_user.posts.length
 end
 
   def explore
