@@ -22,5 +22,7 @@ end
 
   def explore
   @posts = Post.all
+  @newPost = Post.new
+  @tofollow = User.all.last(5)
   end
 end
