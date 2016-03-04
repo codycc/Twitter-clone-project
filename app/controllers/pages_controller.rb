@@ -18,6 +18,7 @@ class PagesController < ApplicationController
   @newPost = Post.new
   @tofollow = User.all.limit(5)
   @tweets = current_user.posts.length
+
 end
 
   def explore
