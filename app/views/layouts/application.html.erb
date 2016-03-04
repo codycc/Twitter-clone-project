@@ -26,9 +26,9 @@
 
               <div class="col-sm-6" style="margin-top: 5px;">
                 <div class="col-sm-2" style="font-size: 100%; opacity: 0.7;"> TWEETS<br>
-                    <h6 style="color:#55acee; font-size: 150%; "><%= @tweets%></h6></div>
+                    <h6 style="color:#55acee; font-size: 150%; "><%= User.find_by_username(params[:id]).posts.count%></h6></div>
                 <div class="col-sm-2" style="font-size: 100%; opacity: 0.7;">  FOLLOWERS<br>
-                    <h6 style="color:#55acee; font-size: 150%;">16</h6></div>
+                    <h6 style="color:#55acee; font-size: 150%;"><%= User.find_by_username(params[:id]).followers.count%></h6></div>
               </div>
               <div class="col-xs-3">
             <a href="/users/edit<%= %>"><li type="button" class="btn btn-default" style="color:grey; opacity:0.8; font-weight:bold; margin-top:15px;float:right;">EDIT PROFILE</li></a>
